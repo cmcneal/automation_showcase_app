@@ -1,7 +1,5 @@
 require 'sinatra'
 
-set :port, 80
-
 $users        = [' test ', 'alpha']
 $current_user = ''
 $pass         = true
