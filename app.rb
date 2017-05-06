@@ -1,6 +1,6 @@
 require 'sinatra'
 
-$users        = [' test ', 'alpha']
+$users        = [' test ', 'alpha', "'username'"]
 $current_user = ''
 $pass         = true
 
@@ -28,6 +28,10 @@ post '/create_user' do
   if $users.include?(params[:username])
     $message = "User '#{params[:username]}' already exists."
     $pass = true
+    redirect '/users'
+  elsif params[:username] == 'username'
+    $message = "Username cannot be 'username'"
+    $pass = false
     redirect '/users'
   else
     $users << params[:username]

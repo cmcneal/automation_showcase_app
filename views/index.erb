@@ -1,37 +1,42 @@
 <div class="panel panel-primary" id="page_content">
-	<div class="panel-heading" id="title_div">
-		<h3 class="panel-title" id="title">Login</h3>
-	</div>
-	<div class="panel-body" id="page_body">
-		<table class="table table-striped table-hover" id="index_page_layout">
-		<!-- <table id="index_page_layout"> -->
-			<tr id="first_row">
-				<td id="form_cell">
-					<form action="/login" method="POST" id="login_form">
-						<label for="username" id="username_label">Enter username:</label><br>
-						<input type="text" name="username" id="username" value=" " /><br><br>
-						<input type="submit" id="login" value="Login" />
-					</form>
-				</td>
-				<td width="30" id="spacing_cell_1">&nbsp;</td>
-				<td id="requirements_cell">
-					<dl id="requirements">
-						<dt>Login requirements</dt>
-						<dd class="small" id="requirement_1">Enter a valid username</dd>
-						<dd class="small" id="requirement_2">Username cannot be 'username'</dd>
-						<dd class="small" id="requirement_3">Successfull login shows message <b>"Your are now signed in!"</b></dd>
-						<dd class="small" id="requirement_4">Failed login shows message <b>"Username was incorrect."</b></dd>
-					</dl>
-				</td>
-				<td width="30" id="spacing_cell_2">&nbsp;</td>
-				<td>
-					<dl id="users_list">
-						<dt>Valid usernames</dt>
-						<dd class="small">'alpha'</dd>
-						<dd class="small">' test '</dd>
-					</dl>
-				</td>
-			</tr>
-		</table>
-	</div>
+  <div class="panel-heading" id="title_div">
+    <h3 class="panel-title" id="title">Login</h3>
+  </div>
+  <div class="panel-body" id="page_body">
+    <table class="table table-striped table-hover" id="index_page_layout">
+    <!-- <table id="index_page_layout"> -->
+      <tr id="first_row">
+        <td id="form_cell">
+          <form action="/login" method="POST" id="login_form">
+            <label for="username" id="username_label">Enter username:</label><br>
+            <input type="text" name="username" id="username" value=" " /><br><br>
+            <input type="submit" id="login" value="Login" />
+          </form>
+        </td>
+        <td width="30" id="spacing_cell_1">&nbsp;</td>
+        <td id="requirements_cell">
+          <dl id="requirements">
+            <dt>Login requirements</dt>
+            <dd class="small" id="requirement_1">A valid username is required. (see list ->)</dd>
+            <dd class="small" id="requirement_2">Username cannot be 'username'.</dd>
+            <dd class="small" id="requirement_3">Successfull login shows message <b>You are now signed in!</b></dd>
+            <dd class="small" id="requirement_4">Failed login shows message <b>Username was incorrect.</b></dd>
+          </dl>
+        </td>
+        <td width="30" id="spacing_cell_2">&nbsp;</td>
+        <td>
+          <dl id="users_list">
+            <dt>Valid usernames:</dt>
+            <dd class="sub small" id="mice_type">(ignore the 's, but not the spaces)</dd>
+            <dd class="small" id="alpha_user">'alpha'</dd>
+            <dd class="small" id="space_test_space_user">' test '</dd>
+          </dl>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id="footer" class="panel-footer">
+    <p>This page is for testing purposes only to evaluate automation frameworks/tools/libraries/languages and manual testing skills. If you would like to discuss it, please use the SGDG slack channel.</p>
+  </div>
+
 </div>

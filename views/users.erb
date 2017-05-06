@@ -1,8 +1,8 @@
 <div class="panel panel-primary" id="page_content">
-	<div class="panel-heading" id="title_div">
-		<h3 class="panel-title" id="title">Create User</h3>
-	</div>
-	<div class="panel-body" id="page_body">
+  <div class="panel-heading" id="title_div">
+    <h3 class="panel-title" id="title">Create User</h3>
+  </div>
+  <div class="panel-body" id="page_body">
     <% if $message %>
       <% if $message %>
         <h4 class="alert" class="text-success">
@@ -13,18 +13,20 @@
     <% end %>
     <label for="user_list" id="user_list_label">Users list:</label><br>
     <ul id="users_list">
-			<% $users.each do |user| %>
-			  <li><%= user %></li>
-			<% end %>
-		</ul>
+      <% $users.each do |user| %>
+        <% unless user == "'username'"%>
+          <li><%= user %></li>
+        <% end %>
+      <% end %>
+    </ul>
   </div>
   <br />
   <br />
   <div id="footer" class="panel-footer">
-		<ul class="list-inline" id="menu">
-			<li><a id="create_user" href="/create_user">Create a user</a></li>
-			<li>|</li>
-			<li><a id="logout" href="/">Logout</a></li>
-		</ul>
-	</div>
+    <ul class="list-inline" id="menu">
+      <li><a id="create_user" href="/create_user">Create a user</a></li>
+      <li>|</li>
+      <li><a id="logout" href="/">Logout</a></li>
+    </ul>
+  </div>
 </div>

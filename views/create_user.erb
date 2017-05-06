@@ -1,21 +1,28 @@
 <div class="panel panel-primary" id="page_content">
-	<div class="panel-heading" id="title_div">
-		<h3 class="panel-title" id="title">Create User</h3>
-	</div>
-	<div class="panel-body" id="page_body">
-		<form action="/create_user" method="POST" id="create_user_form">
+  <div class="panel-heading" id="title_div">
+    <h3 class="panel-title" id="title">Create User</h3>
+  </div>
+  <div class="panel-body" id="page_body">
+    <form action="/create_user" method="POST" id="create_user_form">
       <label for="username" id="username_label">Enter username:</label><br>
-		  <input type="text" id="username" name="username" value="" />
-		  <input type="submit" id="create" value="Create" />
-		</form>
+      <input type="text" id="username" name="username" value="" />
+      <input type="submit" id="create" value="Create" />
+    </form>
+  </div>
+  <div class="panel-body" id="request">
+    <p>Hi!</p>
+    <p>Glad you could drop by, and that you got this far into the app.This page isn't really a part of the testing, you can use it to simply add a user to use on the login page.</p>
+    <p>There isn't a database in the back end, or a local file store. This functionality is intended to be used as a simple service to aid testing, and is not meant to be hardcore tested.</p>
+    <p>There isn't any crazy logic or sanitization going on, nothing to break, so please use it as intended and don't go all crazy sec ops on it. (Plus, it is hosted on Heroku, and they are nice enought not to charge, so please don't do anything to get me kicked off. Thanks.</p>
+    <p>If you want to see what is going on behind the UI, have a look at the source on GitHub.</p>
   </div>
   <br />
   <br />
   <div id="footer" class="panel-footer">
-		<ul class="list-inline" id="menu">
-			<li><a id="users" href="/users">View all users</a></li>
-			<li>|</li>
-			<li><a id="logout" href="/">Logout</a></li>
-		</ul>
-	</div>
+    <ul class="list-inline" id="menu">
+      <li><a id="users" href="/users">View all users</a></li>
+      <li>|</li>
+      <li><a id="logout" href="/">Logout</a></li>
+    </ul>
+  </div>
 </div>
