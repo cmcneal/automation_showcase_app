@@ -1,0 +1,9 @@
+source 'https://rubygems.org'
+ruby "2.3.3"
+gem 'cucumber'
+gem 'capybara'
+gem 'poltergeist'
+gem 'site_prism'
+gem 'pry'
+gem 'launchy'
+gem 'be_valid_asset'
