@@ -2,6 +2,7 @@ Given %r{^I can sign in as (.*)$} do |user|
   user == 'test' ? user = ' test ' : user
 
   visit(IndexPage) do |page|
+    page.has_expected_title?
     page.username = user
     page.login
   end
