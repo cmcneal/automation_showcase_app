@@ -1,1 +1,6 @@
 example_automation_scripts/webdriver.io/errorShots/
+example_automation_scripts/robotframework/log.html
+example_automation_scripts/robotframework/output.xml
+example_automation_scripts/robotframework/report.html
+example_automation_scripts/robotframework/selenium-screenshot-\d+.png,
+example_automation_scripts/robotframework/selenium-screenshot-1.png
