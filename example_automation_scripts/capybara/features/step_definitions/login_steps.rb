@@ -1,10 +1,9 @@
 Given %r{^I can sign in as (.*)$} do |user|
-  visit "https://automation-showcase-app.herokuapp.com"
-
-  expect(page).to have_title 'Test App'
-
   user == 'test' ? user = ' test ' : user
-  fill_in 'username', :with => user
+
+  visit "https://automation-showcase-app.herokuapp.com"
+  expect(page).to have_title 'Test App'
+  fill_in      'username', :with => user
   click_button 'Login'
 end
 
