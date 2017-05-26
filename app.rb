@@ -57,3 +57,11 @@ end
 get '/users' do
   erb :users
 end
+
+get '/presentation' do
+  redirect '/presentation/SQDG_May_25_2017_Automation_Showcase.html'
+end
+
+get '/pdf' do
+  redirect '/presentation/SQDG_May_25_2017_Automation_Showcase.pdf'
+end
