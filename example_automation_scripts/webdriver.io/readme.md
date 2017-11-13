@@ -12,10 +12,18 @@
 |          | ...                              |
 
 ## Installation
-*
+* [Follow these instructions](http://webdriver.io/guide.html)
 
 ## Running the test
-*
+* Ensure that the sample app is running
+* Start the selenium server
+** Open a command prompt in `_selenium_server`
+** Run `java -jar selenium-server-standalone-3.7.1.jar`
+* Modify `wdio.conf.js`
+** If you are running against the app locally, us the *Local* **baseUrl**
+** If you are running against the app remotely, us the *Heroku* **baseUrl**
+* Open a command prompt in this folder
+** Run `wdio wdio.conf.js`
 
 ## Config/folder structure
 ```
