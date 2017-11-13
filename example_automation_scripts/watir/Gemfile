@@ -1,6 +1,0 @@
-source 'https://rubygems.org'
-ruby "2.3.3"
-gem 'cucumber'
-gem "watir", "~> 6.2"
-gem 'rspec'
-gem 'rspec-expectations'

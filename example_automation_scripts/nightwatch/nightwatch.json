@@ -5,17 +5,33 @@
   "custom_assertions_path" : "",
   "page_objects_path" : "",
   "globals_path" : "",
-
   "selenium" : {
-    "start_process" : true,
-    "cli_args" : {
-      "webdriver.chrome.driver" : "./Users/clancey/dev/src/vindex/path/chromedriver.exe"
-    }
+      "start_process" : true,
+      "server_path" : "..\\_selenium_server\\selenium-server-standalone-3.7.1.jar",
+      "log_path" : "",
+      "port" : 4444,
+      "cli_args" : {
+        "webdriver.chrome.driver" : "..\\_selenium_server\\chromedriver.exe"
+      }
   },
-
   "test_settings" : {
     "default" : {
-      "selenium_port"  : 9515,
+      "launch_url" : "https://automation-showcase-app.herokuapp.com",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "default_path_prefix" : "",
+
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions" : {
+          "args" : ["--no-sandbox"]
+        },
+        "acceptSslCerts": true
+      }
+    },
+    "local" : {
+      "launch_url" : "http://localhost:4567/",
+      "selenium_port"  : 4444,
       "selenium_host"  : "localhost",
       "default_path_prefix" : "",
 

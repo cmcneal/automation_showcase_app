@@ -1,7 +1,0 @@
-source 'https://rubygems.org'
-ruby "2.3.3"
-gem 'cucumber'
-gem 'page-object', '~> 2.1', '>= 2.1.1'
-gem "watir", '~> 6.0'
-gem 'rspec'
-gem 'rspec-expectations'

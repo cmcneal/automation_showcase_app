@@ -10,6 +10,9 @@
 ## Installation
 *
 
+## Running the test
+*
+
 ## Config/folder structure
 ```
 .

@@ -17,3 +17,6 @@
 
 ## Installation
 * Install the chrome recorder if you want
+
+## Running the test
+*

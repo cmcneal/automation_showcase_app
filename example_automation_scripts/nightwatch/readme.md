@@ -8,7 +8,13 @@
 |Drivers  | Selenium/WebDriver       |
 
 ## Installation
-*
+* http://nightwatchjs.org/gettingstarted#installation
+
+## Running the test
+* Ensure that the sample app is running
+* Open a command line in this folder
+** If you are running against the app locally, `nightwatch --env local`
+** If you are running against the app remotely, `nightwatch`
 
 ## Config/folder structure
 ```

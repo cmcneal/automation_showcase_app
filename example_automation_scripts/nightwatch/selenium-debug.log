@@ -1,0 +1,13 @@
+10:55:44.984 INFO - Selenium build info: version: '3.7.1', revision: '8a0099a'
+10:55:44.987 INFO - Launching a standalone Selenium Server
+2017-11-13 10:55:45.031:INFO::main: Logging initialized @579ms to org.seleniumhq.jetty9.util.log.StdErrLog
+10:55:45.167 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+10:55:45.259 INFO - Driver provider class org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities {browserName: safari, platform: MAC, version: } does not match the current platform WIN10
+10:55:45.445 INFO - Using the passthrough mode handler
+2017-11-13 10:55:45.513:INFO:osjs.Server:main: jetty-9.4.5.v20170502
+2017-11-13 10:55:45.564:WARN:osjs.SecurityHandler:main: ServletContext@o.s.j.s.ServletContextHandler@4232c52b{/,null,STARTING} has uncovered http methods for path: /
+2017-11-13 10:55:45.571:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@4232c52b{/,null,AVAILABLE}
+2017-11-13 10:55:45.894:INFO:osjs.AbstractConnector:main: Started ServerConnector@77ec78b9{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-11-13 10:55:45.895:INFO:osjs.Server:main: Started @1444ms
+10:55:45.895 INFO - Selenium Server is up and running

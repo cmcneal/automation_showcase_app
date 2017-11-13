@@ -19,3 +19,11 @@ Include contact info so that I can get help running the example as well please :
 
 ## Contributing to the sample app
 If you would like to add more features to the sample app, feel free to by following the  [contributing guidelines](contributing.md).
+
+## Running the app locally
+* Install Ruby
+* Install the Bundler gem
+* Open a command line in this folder
+* Run `bundle install`
+* Then `bundle exec app`
+* The app will be running at `http://localhost:4567`

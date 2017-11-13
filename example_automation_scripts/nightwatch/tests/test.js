@@ -1,7 +1,7 @@
 module.exports = {
   'Verify title' : function (browser) {
     browser
-      .url('https://automation-showcase-app.herokuapp.com')
+      .url(browser.launchUrl)
       .waitForElementVisible('body', 1000)
       .assert.title('Test App');
   },
